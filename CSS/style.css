@@ -1,0 +1,159 @@
+:root {
+    --white: #f2f8fc;
+    --dark:#1c1c1c;
+    --primary: #fffa6a;
+    --secundary: #d81416;
+    --grey: #929292;
+    --font: manrope;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  .hero {
+    width: 100%;
+    background: url(../mitho_transparent/Gafas-14-copia-scaled.png) no-repeat;
+    background-position: right;/*para centrar la imagen  */
+    background-repeat: no-repeat;
+    background-size: 800px;/*para redimensionar el background respecto al contenedor  */
+    background-color: var(--white);
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    text-align:end;
+}
+
+
+.hero-content {
+  height: 80vh;
+  /* para centrar el texto en la imagen de fondo */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.hero-content h1 {
+    font-family: var(--font);
+    color: var(--dark);
+    font-size: 32px;
+}
+
+.hero-content p {
+  font-family: manrope;
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--dark);
+  margin-top: 20px;
+  animation: fadein 3s ease;
+}
+
+h2{
+    color: var(--white);
+    font-family: manrope;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+}
+
+.carrusel {
+  background-color: var(--white);
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.tarjetas-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tarjeta {
+  height: 400px;
+  width: 400px; /* Ancho fijo como solicitaste */
+  background-color: var(--white);
+  border-radius: 40px;
+  line-height: 1.5rem;
+  text-align: left;
+  font-size: 1rem;
+  box-shadow: 12px 12px 10px 5px rgba(199, 199, 199, 0.75),
+              -8px -8px 10px 5px rgba(255, 255, 255, 0.75);
+}
+
+/* Para versión escritorio */
+@media (min-width: 1700px) {
+  .tarjetas-grid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 2rem;
+    overflow-x: auto; /* Permite scroll horizontal si es necesario */
+    padding: 1rem;
+  }
+  
+  .carrusel {
+    padding: 4rem;
+  }
+}
+
+/* Para pantallas intermedias, añadimos scroll horizontal */
+@media (min-width: 768px) and (max-width: 1699px) {
+  .tarjetas-grid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
+    scrollbar-width: thin; /* Para Firefox */
+  }
+  
+  .tarjeta {
+    flex: 0 0 400px; /* No permitir que se encoja */
+    margin-right: 1rem;
+  }
+  
+  .tarjeta:last-child {
+    margin-right: 0;
+  }
+}
+  .tarjeta:hover{
+    animation: cards 0.5s linear;
+    animation-direction: alternate;
+  
+  }
+  
+  .tarjeta h3{
+    font-family: manrope;
+    font-weight: bold;
+    color: var(--dark);
+    font-size: 1.3rem;
+    margin: 1rem 2rem;
+    text-align: left;
+  }
+  
+  .tarjeta img{
+    height: 65%;
+    width: 100%;
+    padding: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  
+  .tarjeta p {
+    font-family: manrope;
+    line-height: 1.8 rem;
+    margin: 1rem 2rem;
+    text-align: left;
+    font-size: 1rem;
+  }

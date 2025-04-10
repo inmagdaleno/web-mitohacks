@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mithohacks</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+<!-- links fonts -->
+<!-- Manrope -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- libreria de css boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  
+ <!-- link iconos -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+ 
+</head>
+<body>
+ 
+     <!-- barra de navegación colapsable -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+         <div class="container-fluid">
+             <!-- Movil: menú hamburguesa a la izquierda -->
+             <button class="navbar-toggler d-lg-none order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             
+             <!-- Logo en el centro en móvil, a la izquierda en escritorio -->
+             <a class="navbar-brand ps-4 order-2 order-lg-1 mx-auto mx-lg-0" href="#">
+                 <img src="imagenes/logo-mithohacks-blanco-p.png" alt="logo" width="200" height="24">
+             </a>
+             
+             <!-- menú colapsable -->
+             <div class="collapse navbar-collapse order-4 order-lg-2" id="navbarNav">
+                 <div class="mx-auto p-2" style="width: 500px;">
+                     <ul class="navbar-nav">
+                         <li class="nav-item">
+                             <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#">Tienda</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#">Quienes somos</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#">Blog</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="#">Contacto</a>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="d-flex align-items-center order-3 ms-auto">
+                 <a href="#" class="me-2 me-lg-4">
+                     <i class="fas fa-shopping-cart" style="font-size: 20px; color:aliceblue"></i>
+                 </a>
+                 <a href="#" class="me-2 me-lg-4">
+                     <i class="fas fa-star" style="font-size: 20px; color:aliceblue"></i>
+                 </a>
+                 <a href="#" class="me-2 me-lg-4">
+                     <i class="fas fa-question-circle" style="font-size: 20px; color:aliceblue"></i>
+                 </a>
+             </div>
+         </div>
+     </nav>
+     <!-- fin barra de navegación-->
+
+    <header class="hero">
+        <div id="inicio" class="hero-content">
+            <h1>Lentes Blueblockers</h1>
+            <p>La salud comienza en el ojo</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="carrusel" id="categorias">
+            <div class="container">
+                <h2>Categorías</h2>
+                <div class="tarjetas-grid">
+                    <div class="tarjeta">
+                        <img src="mitho_transparent/26.png">
+                        <div class="contenido-tarjetas">
+                            <h3>Mithohacks Día</h3>
+                            <p>Filtran la luz azul emitida por dispositivos electrónicos durante el día.</p>
+                        </div>
+                    </div>       
+                    <div class="tarjeta">
+                        <img src="mitho_transparent/roja transparente.png">
+                        <div class="contenido-tarjetas">
+                            <h3>Mithohacks Noche</h3>
+                            <p>Filtran la luz azul emitida por dispositivos electrónicos durante el día.</p>
+                        </div>
+                    </div>     
+                    <div class="tarjeta">
+                        <img src="mitho_transparent/28.png">
+                        <div class="contenido-tarjetas">
+                            <h3>Mithohacks Kids</h3>
+                            <p>Brindamos la mayor seguridad también para la salud de los niños</p>
+                        </div>
+                    </div> 
+                    <div class="tarjeta">
+                        <img src="mitho_transparent/lampara-terapia-luz-roja-01.png">
+                        <div class="contenido-tarjetas">
+                            <h3>Fotobiomodulación</h3>
+                            <p>Sus beneficios celurares han sido probados en numerosos estudios</p>
+                        </div>
+                    </div>         
+                </div>  
+            </div>  
+        </section>
+
+     <!-- Boostrap javascript (se coloca al final del body) -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    
+    <!-- link JavaScript -->
+    <script src="javascript.js/javascript.js"></script>
+</body>
+</html>
