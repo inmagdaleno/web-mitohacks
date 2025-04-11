@@ -18,7 +18,7 @@
     background: url(../mitho_transparent/Gafas-14-copia-scaled.png) no-repeat;
     background-position: right;/*para centrar la imagen  */
     background-repeat: no-repeat;
-    background-size: 800px;/*para redimensionar el background respecto al contenedor  */
+    background-size: 600px;/*para redimensionar el background respecto al contenedor  */
     background-color: var(--white);
     display: flex;
     align-items:end;
@@ -56,7 +56,7 @@ h2{
     color: var(--white);
     font-family: manrope;
     font-size: 1.5rem;
-    padding: 1rem 4rem;
+    padding: 0.5 3rem;
 }
 
 .carrusel {
@@ -76,29 +76,87 @@ h2{
   gap: 2rem;
   width: 100%;
   max-width: 100%;
+  margin-top: 2rem;
 }
 
 .tarjeta {
-  height: 400px;
-  width: 400px; /* Ancho fijo como solicitaste */
+  height: 360px;
+  width: 360px;
   background-color: var(--white);
   border-radius: 40px;
-  line-height: 1.5rem;
-  text-align: left;
+  line-height: 1.3rem;
+  text-align: center;
   font-size: 1rem;
   box-shadow: 12px 12px 10px 5px rgba(199, 199, 199, 0.75),
-              -8px -8px 10px 5px rgba(255, 255, 255, 0.75);
+              -8px -8px 15px 2px rgba(255, 255, 255, 0.5);
 }
 
-/* Para versión escritorio */
-@media (min-width: 1700px) {
+/* Versión móvil (por defecto) */
+.tarjetas-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.tarjeta {
+  width: 100%; /* Ancho completo en móvil */
+  max-width: 340px;
+  margin-bottom: 1rem;
+}
+
+/* Versión tablet (2 columnas x 2 filas) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tarjetas-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem;
+  }
+  
+  .tarjeta {
+    flex: 0 0 calc(50% - 1rem); /* 2 columnas con gap */
+    max-width: 280px; /* Ligeramente reducido */
+    margin: 0.5rem;
+  }
+}
+
+/* Versión escritorio (pantallas medianas - 4 en línea) */
+@media (min-width: 1200px) {
   .tarjetas-grid {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 2rem;
-    overflow-x: auto; /* Permite scroll horizontal si es necesario */
+    gap: 2rem; /* Gap reducido */
+    padding: 0.75rem;
+  }
+  
+  .tarjeta {
+    flex: 0 1 25%; /* Permite que se encoja un poco */
+    min-width: 300px; /* Ancho mínimo para que el contenido siga siendo legible */
+    margin: 0.25rem; /* Margen reducido */
+  }
+  
+  .carrusel {
+    padding: 2rem;
+  }
+}
+
+/* Pantallas grandes (original) */
+@media (min-width: 1700px) {
+  .tarjetas-grid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    gap: 1rem;
     padding: 1rem;
+  }
+  
+  .tarjeta {
+    flex: 0 0 300px; /* Vuelve al tamaño original en pantallas grandes */
+    margin: 1rem;
   }
   
   .carrusel {
@@ -106,27 +164,6 @@ h2{
   }
 }
 
-/* Para pantallas intermedias, añadimos scroll horizontal */
-@media (min-width: 768px) and (max-width: 1699px) {
-  .tarjetas-grid {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding: 1rem;
-    -webkit-overflow-scrolling: touch; /* Mejora el desplazamiento en iOS */
-    scrollbar-width: thin; /* Para Firefox */
-  }
-  
-  .tarjeta {
-    flex: 0 0 400px; /* No permitir que se encoja */
-    margin-right: 1rem;
-  }
-  
-  .tarjeta:last-child {
-    margin-right: 0;
-  }
-}
   .tarjeta:hover{
     animation: cards 0.5s linear;
     animation-direction: alternate;
@@ -138,7 +175,7 @@ h2{
     font-weight: bold;
     color: var(--dark);
     font-size: 1.3rem;
-    margin: 1rem 2rem;
+    margin: 0.5rem 2rem;
     text-align: left;
   }
   
@@ -152,8 +189,8 @@ h2{
   
   .tarjeta p {
     font-family: manrope;
-    line-height: 1.8 rem;
+    line-height: 1.6 rem;
     margin: 1rem 2rem;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
