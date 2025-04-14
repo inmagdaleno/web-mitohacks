@@ -19,6 +19,7 @@
   
  <!-- link iconos -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
  
@@ -79,11 +80,11 @@
         <div id="inicio" class="hero-content">
             <h1>Lentes Blueblockers</h1>
             <p>La salud comienza en el ojo</p>
+            <button class="ver">Ver lentes</button>
         </div>
     </header>
 
     <main>
-
         <section class="carrusel" id="categorias">
             <div class="container">
                 <h2>Categorías</h2>
@@ -103,7 +104,7 @@
                         </div>
                     </div>     
                     <div class="tarjeta">
-                        <img src="mitho_transparent/28.png">
+                        <img src="mitho_transparent/alegria día niño perfil.png">
                         <div class="contenido-tarjetas">
                             <h3>Mithohacks Kids</h3>
                             <p>Brindamos la mayor seguridad también para la salud de los niños</p>
@@ -120,53 +121,255 @@
             </div>  
         </section>
 
-        <section>
+        <section class="ofertas">
             <h2>Ofertas</h2>
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="container-fluid carousel-container">
+                <div id="carouselOfertas" class="carousel carousel-dark slide" data-bs-wrap="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselOfertas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/06.png " class="carousel-image" alt="Modelo Anahata noche">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Anahata Noche</h3>
+                        <h5>AHORA 120,00€</h5>
+                        <p class="precio">Antes 180,00€</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/plexo solar día perfil.png" class="carousel-image" alt="Modelo Plexo solar día">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Plexo Solar Día</h3>
+                        <h5>AHORA 150,00€</h5>
+                        <p class="precio">Antes 180,00€</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/roja transparente.png" class="carousel-image" alt="Modelo corona animals noche">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Corona Animals Noche</h3>
+                        <h5>AHORA 89,00€</h5>
+                        <p class="precio">Antes 180,00€</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/niño amarilla perfil.png" class="carousel-image" alt="Modelo calma kids día">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Calma Kids Día</h3>
+                        <h5>AHORA 89,00€</h5>
+                        <p class="precio">Antes 180,00€</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselOfertas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselOfertas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="imagenes/07.jpg" class="d-block w-100" alt="gafas en oferta">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h4>ANAHATA (DÍA)</h4>
-                      <h5>Ahora 130,00€</h5>
-                      <p>Antes 180,00</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="imagenes/19.jpg" class="d-block w-100" alt="gafas en oferta">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Second slide label</h5>
-                      <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Third slide label</h5>
-                      <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
         </section>
+        
+        <section class="ofertas">
+            <h2>Los más vendidos</h2>
+            <div class="container-fluid carousel-container">
+                <div id="carouselVendidos" class="carousel carousel-dark slide" data-bs-wrap="true">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselVendidos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselVendidos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselVendidos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselVendidos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/plexo dia.png" class="carousel-image" alt="Modelo Plexo Solar Animals día">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Plexo Solar Día</h3>
+                        <p>180,00€</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/raiz noche.png" class="carousel-image" alt="Modelo Raíz Noche">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Raíz Noche</h3>
+                        <p>180,00€</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/raiz dia.png" class="carousel-image" alt="Modelo raíz día">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Raiz Día</h3>
+                        <p>180,00€</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="carousel-image-container">
+                        <img src="mitho_transparent/lampara-terapia-luz-roja-01.png" class="carousel-image" alt="Lampara terapia pequeña">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Lámpara terapia pequeña</h3>
+                        <p>279,00€</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselVendidos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselVendidos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+        </section>
+
+        <section class="blog">
+            <section class="carrusel" id="blog">
+                <div class="container">
+                    <h2>Últimos artículos del blog</h2>
+                    <div class="tarjetas-grid">
+                        <div class="tarjeta">
+                            <img src="imagenes/blog1.png" alt="Imagen de un árbol al atardecer">
+                            <div class="contenido-blog">
+                                <h3>Acostumbrarse a las lentes</h3>
+                                <p>Por lo general suele llevar de unos días a unas semanas el adaptarse completamente a las lentes blueblockers. También le tomará...</p>
+                                <button class="boton-blog">Seguir leyendo</button>
+                            </div>
+                        </div>       
+                        <div class="tarjeta">
+                            <img src="imagenes/blog2.png" alt="Imagen de una persona con su portatil en la playa ">
+                            <div class="contenido-blog">
+                                <h3>¿Qué tipo de lentes necesitas?</h3>
+                                <p>En un mundo cada vez más expuesto a pantallas y luces artificiales, proteger nuestros ojos no es solo una opción, ¡es una necesidad!... </p>
+                                <button class="boton-blog">Seguir leyendo</button>
+                            </div>
+                        </div>     
+                        <div class="tarjeta">
+                            <img src="imagenes/blog3.png" alt="Imagen de una mujer mirando el móvil en la oscuridad">
+                            <div class="contenido-blog">
+                                <h3>Compruebe lo que filtran sus lentes</h3>
+                                <p>Desafortunadamente, muchas de las lentes blueblocker que hoy día se venden no están haciendo lo que deberían, es por ello que hemos...</p>
+                                <button class="boton-blog">Seguir leyendo</button>
+                            </div>
+                        </div> 
+                        <div class="tarjeta">
+                            <img src="imagenes/blog4.png" alt="Imagen de unas gafas y un portatil">
+                            <div class="contenido-blog">
+                                <h3>¿Qué son las lentes blueblocker?</h3>
+                                <p>Las lentes anti-luz azul son lentes que filtran la luz azul de fuentes artificiales. Se deben usar lentes anti azul artificial...</p>
+                                <button class="boton-blog">Seguir leyendo</button>
+                            </div>
+                        </div>         
+                    </div>
+                </div>  
+                <button class="mas">Ver más artículos</button>  
+            </section>
+        </section>
+
+        <section class="section-form">
+            <div class="text-container">
+              <h2>Contacto</h2>
+              <p>¿Alguna duda que quieras resolver? <br>No dudes en ponerte en contacto con nosotros.</p>
+            </div>
+            <div class="form-container">
+                <form class="form">
+                  <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input name="name" id="name" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label for="textarea">¿En que podemos ayudarte?</label>
+                    <textarea cols="50" rows="10" id="textarea" name="textarea"></textarea>
+                  </div>
+                  <button type="submit" class="form-boton">Enviar</button>
+                </form>
+            </div> 
+        </section>
+        
+    <footer>
+        <hr>
+        <div class="container-footer">
+            <div class="grid">
+                <div class="box-footer">
+                    <div class="logo">
+                        <img src="imagenes/logo-mithohacks-blanco-p.png" alt="Logo Mithohacks">
+                        <p><span>©</span> 2025. Mithohacks. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/?locale=es_ESS" target="_blank">
+                            <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://x.com/?lang=es" target="_blank">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">    
+                <div class="box-footer">
+                    <h2>Tienda</h4>
+                    <a href="#">Mithohacks Día</a>
+                    <a href="#">Mithohacks Noche</a>
+                    <a href="#">Mithohacks Kids</a>
+                    <a href="#">Fotobiomodulación</a>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="box-footer">
+                    <h2>Soporte</h2>
+                    <a href="#">Quienes somos</a>
+                    <a href="#">Preguntas frecuentes</a>
+                    <a href="#">Seguimiento del pedido</a>
+                    <a href="#">Contacto</a>              
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="box-footer">
+                    <h2>Legal</h2>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Política de cookies</a>
+                    <a href="#">Condiciones contratación</a>              
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 
      <!-- Boostrap javascript (se coloca al final del body) -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     
-    <!-- link JavaScript -->
-    <script src="javascript.js/javascript.js"></script>
 </body>
 </html>
